@@ -30,7 +30,7 @@ namespace Lab1NumberBase
                         Base10 += Convert.ToInt32(Number[i]) * (int)(Math.Pow(2, i));
                     }
 
-                    //CONVERT TO THE BASE
+                    //CONVERT TO THE BASEn
                     Divide = Base10;
                     while (Divide >= 7)
                     {
