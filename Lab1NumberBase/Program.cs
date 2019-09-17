@@ -23,14 +23,14 @@ namespace Lab1NumberBase
                 Console.WriteLine("Reading the number.");
                 try
                 {
-                    Number = sr.ReadLine();
+                    Number = sr.ReadLine();//j
                     // CONVERTING TO THE BASE 10
                     for (int i = 9; i >= 0; i--)
                     {
                         Base10 += Convert.ToInt32(Number[i]) * (int)(Math.Pow(2, i));
                     }
 
-                    //CONVERT TO THE BASE 8mhm
+                    //CONVERT TO THE BASE
                     Divide = Base10;
                     while (Divide >= 7)
                     {
