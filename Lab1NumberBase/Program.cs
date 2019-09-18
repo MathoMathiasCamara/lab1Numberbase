@@ -9,8 +9,8 @@ namespace Lab1NumberBase
 {
     class Program
     {
-        static String hexa = "0123456789ABCDEF";  //"алфавит" шестнадцатиричной системы
-
+        //static String hexa = "0123456789ABCDEF";  //"алфавит" шестнадцатиричной системы
+        //110101
         static void Main(string[] args)
         {
             
@@ -24,8 +24,10 @@ namespace Lab1NumberBase
                 try
                 {
                     Number = sr.ReadLine();//j
+                    Console.WriteLine(Number);
+
                     // CONVERTING TO THE BASE 10
-                    for (int i = 9; i >= 0; i--)
+                    for (int i = Number.Length; i >= 0; i--)
                     {
                         Base10 += Convert.ToInt32(Number[i]) * (int)(Math.Pow(2, i));
                     }
